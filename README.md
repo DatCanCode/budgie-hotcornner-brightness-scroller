@@ -1,6 +1,6 @@
-# Brightness Scroller
+# Brightness And Volume Scroller
 
-A plugin for [Budgie HotCornersII](https://github.com/UbuntuBudgie/budgie-extras/tree/master/budgie-hotcorners) to change screen brightness.
+A plugin for [Budgie HotCornersII](https://github.com/UbuntuBudgie/budgie-extras/tree/master/budgie-hotcorners) to change screen brightness or volume.
 
 ---
 
@@ -9,13 +9,17 @@ A plugin for [Budgie HotCornersII](https://github.com/UbuntuBudgie/budgie-extras
 ## Features
 
 - Changes screen brightness by scrolling mouse wheel.
+- Changes volume by scrolling mouse wheel.
 - Auto-closes when mouse leaves a corner.
-- Uses `xdotool` to send brightness function keys.
+- Uses `xdotool` to send function keys.
 
 ## Install
 
 - I'm not a professional linux developer. I made this and it works on my Ubuntu Budgie 18.04 Bionic.
 - Download or clone this repository.
+- Find your mouse event file by running:
+-     sudo cat /proc/bus/input/devices
+- Change `mouseEvent` to your path of mouse event.
 - Add this script path to [Budgie HotCornersII](https://github.com/UbuntuBudgie/budgie-extras/tree/master/budgie-hotcorners)
 
 
